@@ -53,6 +53,7 @@ public class Student {
 		this.dob = dob;
 		this.scholarshipStatus = scholarshipStatus;
 		this.gpa = gpa;
+		this.age = this.getAge();
 	}
 
 	public Student(Long id, String name, LocalDate dob,
@@ -62,6 +63,16 @@ public class Student {
 		this.dob = dob;
 		this.scholarshipStatus = scholarshipStatus;
 		this.gpa = gpa;
+		this.age = this.getAge();
+	}
+
+	public Student(long id, String name, LocalDate dob, boolean scholarshipStatus, float gpa, int age) {
+		this.id = id;
+		this.name = name;
+		this.dob = dob;
+		this.scholarshipStatus = scholarshipStatus;
+		this.gpa = gpa;
+		this.age = age;
 	}
 
 	public Long getId() {
@@ -126,7 +137,7 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", dob=" + dob + ", scholarshipStatus=" + scholarshipStatus
-				+ ", gpa=" + gpa + "]";
+				+ ", gpa=" + gpa + ", age=" + this.getAge() +"]";
 	}
 	
 }

@@ -36,7 +36,7 @@ public class StudentUnitTest {
 	@Test
 	public void testToString() {
 		Student stu = new Student(6L, "Karen", LocalDate.of(1997, 4, 1), true, 3.5f);
-		assertEquals("Student [id=6, name=Karen, dob=" + LocalDate.of(1997, 4, 1) +", scholarshipStatus=true, gpa=3.5]",
+		assertEquals("Student [id=6, name=Karen, dob=" + LocalDate.of(1997, 4, 1) +", scholarshipStatus=true, gpa=3.5, age=" + stu.getAge() +"]",
 				stu.toString());
 	}
 	
