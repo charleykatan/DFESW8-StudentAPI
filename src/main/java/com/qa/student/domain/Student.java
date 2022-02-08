@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -34,6 +36,8 @@ public class Student {
 	@NotNull
 	private boolean scholarshipStatus;
 	
+	@Min(0)
+	@Max(5)
 	@Column
 	private float gpa;
 	
@@ -49,6 +53,7 @@ public class Student {
 		this.dob = dob;
 		this.scholarshipStatus = scholarshipStatus;
 		this.gpa = gpa;
+		this.age = this.getAge();
 	}
 
 	public Student(Long id, String name, LocalDate dob,
@@ -58,14 +63,20 @@ public class Student {
 		this.dob = dob;
 		this.scholarshipStatus = scholarshipStatus;
 		this.gpa = gpa;
+		this.age = this.getAge();
+	}
+
+	public Student(long id, String name, LocalDate dob, boolean scholarshipStatus, float gpa, int age) {
+		this.id = id;
+		this.name = name;
+		this.dob = dob;
+		this.scholarshipStatus = scholarshipStatus;
+		this.gpa = gpa;
+		this.age = age;
 	}
 
 	public Long getId() {
 		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -104,13 +115,9 @@ public class Student {
 		return Period.between(this.dob, LocalDate.now()).getYears();
 	}
 
-	public void setAge(int age) {
-		this.age = age;
-	}
-
 	@Override
 	public int hashCode() {
-		return Objects.hash(age, dob, gpa, name, scholarshipStatus);
+		return Objects.hash(dob, gpa, name, scholarshipStatus);
 	}
 
 	@Override
@@ -122,7 +129,7 @@ public class Student {
 		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj;
-		return age == other.age && Objects.equals(dob, other.dob)
+		return Objects.equals(dob, other.dob)
 				&& Float.floatToIntBits(gpa) == Float.floatToIntBits(other.gpa) && Objects.equals(name, other.name)
 				&& scholarshipStatus == other.scholarshipStatus;
 	}
@@ -130,7 +137,7 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", dob=" + dob + ", scholarshipStatus=" + scholarshipStatus
-				+ ", gpa=" + gpa + ", age=" + age + "]";
+				+ ", gpa=" + gpa + ", age=" + this.getAge() +"]";
 	}
 	
 }
