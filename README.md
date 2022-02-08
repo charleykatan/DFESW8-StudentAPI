@@ -42,10 +42,30 @@ I also would like to add some custom methods to the Service/Controller, and incl
 I will use the rest of my time this week to do so, and will include a link to that repository here.
 
 ## Screenshots of Postman Requests and output from the API
+Post request in Postman (creating new Student("Donald", 1948-05-12", false, 4.2f) <img width="829" alt="Post - Postman" src="https://user-images.githubusercontent.com/95347202/153022509-809cc593-435e-421f-a415-bfeb88915099.png">
+
+Put request in Postman (editing Donald to become Charley L Katan) <img width="808" alt="Put - Postman" src="https://user-images.githubusercontent.com/95347202/153023217-ae324fde-d4da-40e8-b674-576b7f8b79fb.png">
+
+Delete request in Postman (Charley L Katan is deleted) <img width="796" alt="Delete - Postman" src="https://user-images.githubusercontent.com/95347202/153023647-43b0b20f-968b-457c-892a-bad01f954882.png">
+
+Get all request in Postman (after deleting myself!) <img width="838" alt="Get All - Postman" src="https://user-images.githubusercontent.com/95347202/153024124-9810e2f9-d36c-494b-a56c-2f713dafd9da.png">
+
+Get by id=2 request in Postman <img width="803" alt="Screenshot 2022-02-08 at 15 53 04" src="https://user-images.githubusercontent.com/95347202/153024794-6eb0c71a-bb95-447b-ac39-8712ce7bf57e.png">
 
 ## Screenshots of database proving that the data is being persisted
+Post request (creating new Student("Donald", 1948-05-12", false, 4.2f) in Workbench ![Post - Workbench](https://user-images.githubusercontent.com/95347202/153022953-e0115d49-eba3-4879-bf46-13e9b3ed5ec8.png)
+
+Put request (editing Donald to become Charley L Katan) ![Put - Workbench](https://user-images.githubusercontent.com/95347202/153023368-19512656-05b3-4850-aa18-e825444469a8.png)
+
+Delete request (deleting Charley L Katan) ![Delete - Workbench](https://user-images.githubusercontent.com/95347202/153023867-22bfe868-8471-45cc-8116-cc8b91515ae7.png)
+
+Get all request (after deleting myself!) ![Screenshot 2022-02-08 at 15 54 15](https://user-images.githubusercontent.com/95347202/153024742-85be54d0-8ae5-495d-9ae6-6763dbad9bf4.png)
+
+Get by id=2 in Workbench![Screenshot 2022-02-08 at 15 53 28](https://user-images.githubusercontent.com/95347202/153024849-9a67e5f6-7fc9-48b3-8b61-d21f68e259e9.png)
 
 ## Screenshot of test results, including coverage report
+Test results - ![Test](https://user-images.githubusercontent.com/95347202/153025014-fb3eb792-e482-41a2-88fa-fc317f565025.png)
+Coverage report - ![Screenshot 2022-02-08 at 15 40 44](https://user-images.githubusercontent.com/95347202/153025081-61aeece8-8d1a-41d2-811e-5790a8b6ca0f.png)
 
 ## Link to Jira board
 https://id.atlassian.com/invite/p/jira-software?id=iT3J_11wQ7-CHOgZ4W3sQA
