@@ -96,7 +96,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.qa.student</mainClass>
+							<mainClass>com.qa.student.StudentApiApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
