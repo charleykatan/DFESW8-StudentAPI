@@ -29,9 +29,9 @@ I was also able to reach 98.6% testing coverage, including on the Controller, wh
 My time-management was very good - I lost 3 hours on the first day of the project to an OS update but managed to make progress in half the time I expected.
 
 ## What didn't go as planned?
-There was one episode during which my otherwise gorgeous feature-branch model became tainted with a messy merge. 
-Essentially, I finished my testing suite, and everything was fine and dandy - I pushed it to the remote repo\s feature-test branch, made a pull request to merge it with dev branch, and made another pull request to merge dev to main. All good. 
-Then, in my local repo, I tried to build a .jar file - and eventually I succeeded! 
+There was one episode during which my otherwise gorgeous feature-branch model became tainted by a messy merge. 
+Essentially, I finished my testing suite, and everything was fine and dandy - I pushed it to the remote repo's feature-test branch, made a pull request to merge it with dev branch, and made another pull request to merge dev to main. All good. 
+Then, in my local repo, I tried to build a .jar file - and eventually I succeeded! (N.B. I later discovered that my .jar file wasn't "fat" enough, so I had to edit my pom.xml and reupload the correct .jar file - persistence and testing is key!)
 In the great excitement of the moment, I forgot to pull from the remote repo's dev branch before pushing the .jar file up - as such I ended up merging dev with dev on my local repo, and eventually pushing that up to the remote repo. I think. 
 Either way it made my feature-branch model look a bit strange.
 I think I understand what went wrong so I feel like it's unlikely I'd make the same mistake again - always remember to pull before pushing!
