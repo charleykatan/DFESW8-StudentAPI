@@ -65,11 +65,16 @@ Get by id=2 in Workbench![Screenshot 2022-02-08 at 15 53 28](https://user-images
 
 ## Screenshot of test results, including coverage report
 Test results - ![Test](https://user-images.githubusercontent.com/95347202/153025014-fb3eb792-e482-41a2-88fa-fc317f565025.png)
+
 Coverage report - ![Screenshot 2022-02-08 at 15 40 44](https://user-images.githubusercontent.com/95347202/153025081-61aeece8-8d1a-41d2-811e-5790a8b6ca0f.png)
 
 ## Link to Jira board
 https://id.atlassian.com/invite/p/jira-software?id=iT3J_11wQ7-CHOgZ4W3sQA
 https://charleykatan.atlassian.net/jira/software/projects/DS/boards/3
+
+Screenshots from Jira board:![Screenshot 2022-02-10 at 11 53 05](https://user-images.githubusercontent.com/95347202/153403829-b365b506-0a68-478b-9918-82277075d19b.png)
+![Screenshot 2022-02-10 at 11 53 28](https://user-images.githubusercontent.com/95347202/153403832-7abdb158-8e04-4d5d-b0c3-d38cfc692638.png)
+![Screenshot 2022-02-10 at 11 53 41](https://user-images.githubusercontent.com/95347202/153403834-38ac512a-a99f-47d6-9f09-d3739d8eddec.png)
 
 ## Authors
 Charley Katan - Initial work - charleykatan
